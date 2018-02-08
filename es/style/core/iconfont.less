@@ -1,0 +1,46 @@
+@import '../themes/default';
+@import "../mixins/iconfont";
+
+// font-face
+@font-face {
+  font-family: 'mkicon';
+  src: url('@{icon-url}.eot'); /* IE9*/
+  src:
+  /* chrome、firefox */
+  url('@{icon-url}.woff') format('woff'),
+  /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('@{icon-url}.ttf') format('truetype'),
+  /* iOS 4.1- */
+  url('@{icon-url}.svg#iconfont') format('svg');
+}
+
+.@{iconfont-css-prefix} {
+ .iconfont-mixin();
+}
+
+.@{iconfont-css-prefix}-angle-up:before { content: "\e922"; }
+.@{iconfont-css-prefix}-angle-down:before { content: "\e921"; }
+.@{iconfont-css-prefix}-angle-left:before { content: "\e902"; }
+.@{iconfont-css-prefix}-angle-right:before { content: "\e918"; }
+.@{iconfont-css-prefix}-times-thin:before { content: "\e923"; }
+.@{iconfont-css-prefix}-plus:before { content: "\e988"; }
+.@{iconfont-css-prefix}-plus-thin:before { content: "\e998"; }
+.@{iconfont-css-prefix}-search:before { content: "\e905"; }
+.@{iconfont-css-prefix}-question-circle:before { content: "\e9a8"; }
+.@{iconfont-css-prefix}-question-circle-o:before { content: "\e9ab"; }
+.@{iconfont-css-prefix}-file-empty:before { content: "\e679"; }
+.@{iconfont-css-prefix}-folder:before { content: "\e67b"; }
+.@{iconfont-css-prefix}-folder-open:before { content: "\e67e"; }
+.@{iconfont-css-prefix}-option-value:before { content: "\e67c"; } // 值列表选项
+.@{iconfont-css-prefix}-rubbish:before { content: "\e9c6"; }
+.@{iconfont-css-prefix}-loading:before { content: "\e67d"; }
+.@{iconfont-css-prefix}-loading-3-quarters:before { content: "\e67d"; }
+.@{iconfont-css-prefix}-spin:before {
+  display: inline-block;
+  animation: loadingCircle 1s infinite linear;
+}
+.@{iconfont-css-prefix}-check-circle:before { content: "\e97c"; }
+.@{iconfont-css-prefix}-info-circle:before { content: "\e9ea"; }
+.@{iconfont-css-prefix}-cross-circle:before { content: "\e9ea"; }
+.@{iconfont-css-prefix}-exclamation-circle:before { content: "\e9ea"; }
+
