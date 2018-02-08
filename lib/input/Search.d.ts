@@ -5,6 +5,7 @@ export interface SearchProps extends InputProps {
     inputPrefixCls?: string;
     onSearch?: (value: string) => any;
     enterButton?: boolean | React.ReactNode;
+    theme?: 'default' | 'surround';
 }
 export default class Search extends React.Component<SearchProps, any> {
     static defaultProps: {

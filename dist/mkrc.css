@@ -3370,6 +3370,15 @@ textarea.mk-input {
 .mk-input-search.mk-input-search-enter-button > .mk-input-suffix {
   right: 0;
 }
+.mk-input-search:not(.mk-input-search-sr) input {
+  background-color: #f2f2f2;
+  border-color: #f2f2f2;
+  border-radius: 4px;
+}
+.mk-input-search:not(.mk-input-search-sr) input:hover,
+.mk-input-search:not(.mk-input-search-sr) input:focus {
+  border-color: #f2f2f2 !important;
+}
 /* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
 /* stylelint-disable no-duplicate-selectors */
 /* stylelint-disable declaration-bang-space-before,no-duplicate-selectors */
@@ -4723,12 +4732,12 @@ a.mk-btn-sm {
   font-size: 12px;
 }
 .mk-breadcrumb a {
-  color: rgba(0, 0, 0, 0.45);
+  color: #40a9ff;
   -webkit-transition: color .3s;
   transition: color .3s;
 }
 .mk-breadcrumb a:hover {
-  color: #40a9ff;
+  color: #1890ff;
 }
 .mk-breadcrumb > span:last-child {
   color: rgba(0, 0, 0, 0.65);

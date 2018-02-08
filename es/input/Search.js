@@ -62,7 +62,8 @@ var Search = function (_React$Component) {
                 size = _a.size,
                 enterButton = _a.enterButton,
                 suffix = _a.suffix,
-                others = __rest(_a, ["className", "prefixCls", "inputPrefixCls", "size", "enterButton", "suffix"]);
+                theme = _a.theme,
+                others = __rest(_a, ["className", "prefixCls", "inputPrefixCls", "size", "enterButton", "suffix", "theme"]);
             delete others.onSearch;
             var buttonOrIcon = enterButton ? React.createElement(
                 Button,
@@ -70,8 +71,8 @@ var Search = function (_React$Component) {
                 enterButton === true ? React.createElement(Icon, { type: 'search' }) : enterButton
             ) : React.createElement(Icon, { className: prefixCls + '-icon', type: 'search', key: 'searchIcon' });
             var searchSuffix = suffix ? [suffix, buttonOrIcon] : buttonOrIcon;
-            var inputClassName = classNames(prefixCls, className, (_classNames = {}, _defineProperty(_classNames, prefixCls + '-enter-button', !!enterButton), _defineProperty(_classNames, prefixCls + '-' + size, !!size), _classNames));
-            return React.createElement(Input, _extends({ onPressEnter: this.onSearch }, others, { size: size, className: inputClassName, prefixCls: inputPrefixCls, suffix: searchSuffix, theme: 'surround', ref: this.saveInput }));
+            var inputClassName = classNames(prefixCls, className, (_classNames = {}, _defineProperty(_classNames, prefixCls + '-enter-button', !!enterButton), _defineProperty(_classNames, prefixCls + '-' + size, !!size), _defineProperty(_classNames, prefixCls + '-sr', theme === 'surround'), _classNames));
+            return React.createElement(Input, _extends({ onPressEnter: this.onSearch }, others, { size: size, theme: theme, className: inputClassName, prefixCls: inputPrefixCls, suffix: searchSuffix, ref: this.saveInput }));
         }
     }]);
 

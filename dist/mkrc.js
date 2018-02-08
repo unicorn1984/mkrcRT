@@ -24932,7 +24932,8 @@ var Search = function (_React$Component) {
                 size = _a.size,
                 enterButton = _a.enterButton,
                 suffix = _a.suffix,
-                others = __rest(_a, ["className", "prefixCls", "inputPrefixCls", "size", "enterButton", "suffix"]);
+                theme = _a.theme,
+                others = __rest(_a, ["className", "prefixCls", "inputPrefixCls", "size", "enterButton", "suffix", "theme"]);
             delete others.onSearch;
             var buttonOrIcon = enterButton ? __WEBPACK_IMPORTED_MODULE_6_react__["createElement"](
                 __WEBPACK_IMPORTED_MODULE_10__button__["a" /* default */],
@@ -24940,8 +24941,8 @@ var Search = function (_React$Component) {
                 enterButton === true ? __WEBPACK_IMPORTED_MODULE_6_react__["createElement"](__WEBPACK_IMPORTED_MODULE_9__icon__["a" /* default */], { type: 'search' }) : enterButton
             ) : __WEBPACK_IMPORTED_MODULE_6_react__["createElement"](__WEBPACK_IMPORTED_MODULE_9__icon__["a" /* default */], { className: prefixCls + '-icon', type: 'search', key: 'searchIcon' });
             var searchSuffix = suffix ? [suffix, buttonOrIcon] : buttonOrIcon;
-            var inputClassName = __WEBPACK_IMPORTED_MODULE_7_classnames___default()(prefixCls, className, (_classNames = {}, __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()(_classNames, prefixCls + '-enter-button', !!enterButton), __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()(_classNames, prefixCls + '-' + size, !!size), _classNames));
-            return __WEBPACK_IMPORTED_MODULE_6_react__["createElement"](__WEBPACK_IMPORTED_MODULE_8__Input__["a" /* default */], __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({ onPressEnter: this.onSearch }, others, { size: size, className: inputClassName, prefixCls: inputPrefixCls, suffix: searchSuffix, theme: 'surround', ref: this.saveInput }));
+            var inputClassName = __WEBPACK_IMPORTED_MODULE_7_classnames___default()(prefixCls, className, (_classNames = {}, __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()(_classNames, prefixCls + '-enter-button', !!enterButton), __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()(_classNames, prefixCls + '-' + size, !!size), __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()(_classNames, prefixCls + '-sr', theme === 'surround'), _classNames));
+            return __WEBPACK_IMPORTED_MODULE_6_react__["createElement"](__WEBPACK_IMPORTED_MODULE_8__Input__["a" /* default */], __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({ onPressEnter: this.onSearch }, others, { size: size, theme: theme, className: inputClassName, prefixCls: inputPrefixCls, suffix: searchSuffix, ref: this.saveInput }));
         }
     }]);
 
