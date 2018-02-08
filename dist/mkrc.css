@@ -2501,7 +2501,7 @@ mark {
   display: none;
 }
 .mk-select-arrow:before {
-  content: '\E61D';
+  content: '\E921';
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
@@ -2561,7 +2561,7 @@ mark {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "\E62E";
+  content: "\E923";
 }
 .mk-select-selection__clear:hover {
   color: rgba(0, 0, 0, 0.45);
@@ -2831,7 +2831,7 @@ mark {
   color: #404040;
 }
 .mk-select-selection--multiple .mk-select-selection__choice__remove:before {
-  content: "\E633";
+  content: "\E923";
 }
 .mk-select-selection--multiple .mk-select-selection__clear {
   top: 16px;
@@ -19084,7 +19084,7 @@ span.mk-transfer-list-search-action {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "\E6AE";
+  content: "\E67D";
   -webkit-animation: loadingCircle 1s infinite linear;
           animation: loadingCircle 1s infinite linear;
   color: #1890ff;
@@ -19482,6 +19482,7 @@ li.mk-select-tree-treenode-disabled > .mk-select-tree-node-content-wrapper:hover
   position: relative;
   height: 24px;
   line-height: 24px;
+  width: calc(100%);
 }
 .mk-tree li .mk-tree-node-content-wrapper:hover {
   background-color: #e6f7ff;
@@ -19576,6 +19577,27 @@ li.mk-select-tree-treenode-disabled > .mk-select-tree-node-content-wrapper:hover
   -webkit-transform: rotate(270deg) scale(0.59);
       -ms-transform: rotate(270deg) scale(0.59);
           transform: rotate(270deg) scale(0.59);
+}
+.mk-tree li span.mk-tree-iconEle.mk-tree-icon__open:before {
+  font-family: 'mkicon';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E67E";
+}
+.mk-tree li span.mk-tree-iconEle.mk-tree-icon__close:before {
+  font-family: 'mkicon';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E67B";
+}
+.mk-tree li span.mk-tree-iconEle.mk-tree-icon__docu:before {
+  font-family: 'mkicon';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\E679";
 }
 .mk-tree li:last-child > span.mk-tree-switcher:before,
 .mk-tree li:last-child > span.mk-tree-iconEle:before {

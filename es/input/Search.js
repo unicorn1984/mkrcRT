@@ -71,7 +71,7 @@ var Search = function (_React$Component) {
             ) : React.createElement(Icon, { className: prefixCls + '-icon', type: 'search', key: 'searchIcon' });
             var searchSuffix = suffix ? [suffix, buttonOrIcon] : buttonOrIcon;
             var inputClassName = classNames(prefixCls, className, (_classNames = {}, _defineProperty(_classNames, prefixCls + '-enter-button', !!enterButton), _defineProperty(_classNames, prefixCls + '-' + size, !!size), _classNames));
-            return React.createElement(Input, _extends({ onPressEnter: this.onSearch }, others, { size: size, className: inputClassName, prefixCls: inputPrefixCls, suffix: searchSuffix, ref: this.saveInput }));
+            return React.createElement(Input, _extends({ onPressEnter: this.onSearch }, others, { size: size, className: inputClassName, prefixCls: inputPrefixCls, suffix: searchSuffix, theme: 'surround', ref: this.saveInput }));
         }
     }]);
 

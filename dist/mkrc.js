@@ -24941,7 +24941,7 @@ var Search = function (_React$Component) {
             ) : __WEBPACK_IMPORTED_MODULE_6_react__["createElement"](__WEBPACK_IMPORTED_MODULE_9__icon__["a" /* default */], { className: prefixCls + '-icon', type: 'search', key: 'searchIcon' });
             var searchSuffix = suffix ? [suffix, buttonOrIcon] : buttonOrIcon;
             var inputClassName = __WEBPACK_IMPORTED_MODULE_7_classnames___default()(prefixCls, className, (_classNames = {}, __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()(_classNames, prefixCls + '-enter-button', !!enterButton), __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()(_classNames, prefixCls + '-' + size, !!size), _classNames));
-            return __WEBPACK_IMPORTED_MODULE_6_react__["createElement"](__WEBPACK_IMPORTED_MODULE_8__Input__["a" /* default */], __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({ onPressEnter: this.onSearch }, others, { size: size, className: inputClassName, prefixCls: inputPrefixCls, suffix: searchSuffix, ref: this.saveInput }));
+            return __WEBPACK_IMPORTED_MODULE_6_react__["createElement"](__WEBPACK_IMPORTED_MODULE_8__Input__["a" /* default */], __WEBPACK_IMPORTED_MODULE_0_babel_runtime_helpers_extends___default()({ onPressEnter: this.onSearch }, others, { size: size, className: inputClassName, prefixCls: inputPrefixCls, suffix: searchSuffix, theme: 'surround', ref: this.saveInput }));
         }
     }]);
 
@@ -76604,10 +76604,11 @@ var TreeSelect = function (_React$Component) {
                 prefixCls = _a.prefixCls,
                 className = _a.className,
                 size = _a.size,
+                theme = _a.theme,
                 notFoundContent = _a.notFoundContent,
                 dropdownStyle = _a.dropdownStyle,
-                restProps = __rest(_a, ["prefixCls", "className", "size", "notFoundContent", "dropdownStyle"]);
-            var cls = __WEBPACK_IMPORTED_MODULE_8_classnames___default()((_classNames = {}, __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()(_classNames, prefixCls + '-lg', size === 'large'), __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()(_classNames, prefixCls + '-sm', size === 'small'), _classNames), className);
+                restProps = __rest(_a, ["prefixCls", "className", "size", "theme", "notFoundContent", "dropdownStyle"]);
+            var cls = __WEBPACK_IMPORTED_MODULE_8_classnames___default()((_classNames = {}, __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()(_classNames, prefixCls + '-lg', size === 'large'), __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()(_classNames, prefixCls + '-sm', size === 'small'), _classNames), __WEBPACK_IMPORTED_MODULE_1_babel_runtime_helpers_defineProperty___default()({}, prefixCls + '-li', !theme || theme === 'default'), className);
             var checkable = restProps.treeCheckable;
             if (checkable) {
                 checkable = __WEBPACK_IMPORTED_MODULE_6_react__["createElement"]('span', { className: prefixCls + '-tree-checkbox-inner' });
