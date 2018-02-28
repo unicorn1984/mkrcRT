@@ -62814,6 +62814,7 @@ function setMomentLocale(locale) {
         __WEBPACK_IMPORTED_MODULE_7_moment__["locale"](locale.locale);
     } else {
         __WEBPACK_IMPORTED_MODULE_7_moment__["locale"]('en');
+        __WEBPACK_IMPORTED_MODULE_7_moment__["locale"]('en');
     }
 }
 

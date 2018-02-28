@@ -12,6 +12,7 @@ function setMomentLocale(locale) {
         moment.locale(locale.locale);
     } else {
         moment.locale('en');
+        moment.locale('en');
     }
 }
 
